@@ -36,7 +36,7 @@ export default function Home() {
             className="mt-8 px-4 py-2 bg-purple-500 text-white rounded-md hover:bg-purple-600"
             onClick={() => setCurrentPage(null)}
           >
-            กลับไปหน้าเลือก
+            กลับหน้าหลัก
           </button>
         )}
       </div>
