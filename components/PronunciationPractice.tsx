@@ -38,13 +38,13 @@ const PronunciationPractice = () => {
       recognitionRef.current = new (window as any).webkitSpeechRecognition()
       recognitionRef.current.continuous = false
       recognitionRef.current.interimResults = false
-      recognitionRef.current.lang = 'th-TH' // Set to Thai to better recognize Thai-accented English
+      recognitionRef.current.lang = 'th-TH' // ตั้งค่าเป็นไทยเพื่อให้จำอังกฤษสำเนียงไทยได้ถนัด
 
       recognitionRef.current.onresult = (event: any) => {
         const transcript = event.results[0][0].transcript.toLowerCase().trim()
         const confidence = event.results[0][0].confidence
         
-        // Improved matching logic
+
         const score = calculateScore(transcript, currentPhonics.thaiPhonetic)
         let feedback = ''
 
@@ -152,14 +152,14 @@ const PronunciationPractice = () => {
               onClick={startRecording}
               className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 text-lg"
             >
-              เริ่มอัดเสียง
+              พูด
             </button>
           ) : (
             <button
               onClick={stopRecording}
               className="px-6 py-3 bg-red-500 text-white rounded-lg hover:bg-red-600 text-lg"
             >
-              หยุดอัดเสียง
+              หยุดพูด
             </button>
           )}
         </div>

@@ -37,22 +37,22 @@ export const getPhonics = () => [
   { 
     letter: 'A',
     thaiPhonetic: 'เอแอะ',
-    keyPoints: ['เปิดปากกว้าง', 'ลิ้นอยู่ต่ำ', 'เสียงสั้นกระชับ']
+    keyPoints: ['barry:tip1', 'barry:tip2', 'barry:tip3']
   },
   { 
     letter: 'B',
     thaiPhonetic: 'บีเบอะ',
-    keyPoints: ['ริมฝีปากชิดกัน', 'ปล่อยลมออกทันที', 'เสียงก้อง']
+    keyPoints: ['barry:tip1', 'barry:tip2', 'barry:tip3']
   },
   { 
     letter: 'C',
     thaiPhonetic: 'ซีเคอะ',
-    keyPoints: ['ลิ้นแตะเพดานหลัง', 'ปล่อยลมแรง', 'เสียงไม่ก้อง']
+    keyPoints: ['barry:tip1', 'barry:tip2', 'barry:tip3']
   },
   { 
     letter: 'D',
     thaiPhonetic: 'ดีเดอะ',
-    keyPoints: ['ลิ้นแตะปุ่มเหงือก', 'ปล่อยลมทันที', 'เสียงก้อง']
+    keyPoints: ['barry:tip1', 'barry:tip2', 'barry:tip3']
   }
 ]
 
