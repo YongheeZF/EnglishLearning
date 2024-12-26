@@ -3,15 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #000000;
+  --foreground: #ffffff;
 }
 
 body {
@@ -19,3 +12,26 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes purplePulse {
+  0% { box-shadow: 0 0 5px #4a0080, 0 0 10px #4a0080, 0 0 15px #4a0080; }
+  50% { box-shadow: 0 0 10px #8000ff, 0 0 20px #8000ff, 0 0 30px #8000ff; }
+  100% { box-shadow: 0 0 5px #4a0080, 0 0 10px #4a0080, 0 0 15px #4a0080; }
+}
+
+.glow-text {
+  color: #ffffff;
+  text-shadow: 0 0 10px #8000ff, 0 0 20px #8000ff, 0 0 30px #8000ff;
+}
+
+.purple-glow-button {
+  background-color: transparent;
+  border: 2px solid #8000ff;
+  color: white;
+  animation: purplePulse 2s infinite;
+}
+
+.purple-glow-button:hover {
+  background-color: rgba(128, 0, 255, 0.2);
+}
+

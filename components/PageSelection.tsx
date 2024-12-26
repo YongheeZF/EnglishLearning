@@ -9,19 +9,19 @@ const PageSelection: React.FC<PageSelectionProps> = ({ onSelectPage }) => {
     <div className="flex flex-col items-center space-y-4">
       <h2 className="text-2xl font-semibold mb-4">เลือกหมวดการเรียนรู้</h2>
       <button
-        className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors"
+        className="px-4 py-2 rounded-md purple-glow-button transition-colors"
         onClick={() => onSelectPage('pronunciation')}
       >
         ฝึกออกเสียงภาษาอังกฤษ
       </button>
       <button
-        className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors"
+        className="px-4 py-2 rounded-md purple-glow-button transition-colors"
         onClick={() => onSelectPage('vocabulary')}
       >
         เรียนรู้คำศัพท์
       </button>
       <button
-        className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors"
+        className="px-4 py-2 rounded-md purple-glow-button transition-colors"
         onClick={() => onSelectPage('grammar')}
       >
         ฝึกไวยากรณ์
