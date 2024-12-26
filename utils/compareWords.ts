@@ -1,4 +1,3 @@
-// Levenshtein distance function to measure similarity between two strings
 function levenshteinDistance(a: string, b: string): number {
   const matrix = Array(b.length + 1).fill(null).map(() => Array(a.length + 1).fill(null));
 
@@ -9,9 +8,9 @@ function levenshteinDistance(a: string, b: string): number {
     for (let i = 1; i <= a.length; i++) {
       const substitutionCost = a[i - 1] === b[j - 1] ? 0 : 1;
       matrix[j][i] = Math.min(
-        matrix[j][i - 1] + 1, // deletion
-        matrix[j - 1][i] + 1, // insertion
-        matrix[j - 1][i - 1] + substitutionCost // substitution
+        matrix[j][i - 1] + 1, 
+        matrix[j - 1][i] + 1, 
+        matrix[j - 1][i - 1] + substitutionCost 
       );
     }
   }
@@ -19,7 +18,6 @@ function levenshteinDistance(a: string, b: string): number {
   return matrix[b.length][a.length];
 }
 
-// Function to calculate similarity percentage
 function calculateSimilarity(original: string, spoken: string): number {
   const distance = levenshteinDistance(original.toLowerCase(), spoken.toLowerCase());
   const maxLength = Math.max(original.length, spoken.length);

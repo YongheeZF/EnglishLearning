@@ -6,7 +6,6 @@ interface Word {
 const wordKeyPoints: Record<string, string[]> = {
   fish: ["เน้นเสียง 'f' ต้นคำ", "ลงท้ายด้วยเสียง 'sh' แบบนุ่มนวล"],
   shell: ["เริ่มต้นด้วยเสียง 'sh' แบบนุ่มนวล", "เน้นเสียง 'l' ท้ายคำ"],
-  // เพิ่ม keyPoints สำหรับคำอื่นๆ ตามต้องการ
 }
 
 export const getWords = (): Word[] => {

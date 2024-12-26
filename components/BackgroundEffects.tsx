@@ -105,7 +105,7 @@ export function BackgroundEffects() {
 
       draw(ctx: CanvasRenderingContext2D) {
         ctx.beginPath()
-        ctx.fillStyle = `rgba(138, 43, 226, ${this.opacity})` // Changed color to purple
+        ctx.fillStyle = `rgba(138, 43, 226, ${this.opacity})` 
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2)
         ctx.fill()
       }
@@ -158,8 +158,8 @@ export function BackgroundEffects() {
           this.y - Math.sin((this.angle * Math.PI) / 180) * this.length
         )
 
-        gradient.addColorStop(0, `rgba(138, 43, 226, ${this.opacity})`) // Changed color to purple
-        gradient.addColorStop(1, 'rgba(138, 43, 226, 0)') // Changed color to purple
+        gradient.addColorStop(0, `rgba(138, 43, 226, ${this.opacity})`) 
+        gradient.addColorStop(1, 'rgba(138, 43, 226, 0)') 
 
         ctx.beginPath()
         ctx.strokeStyle = gradient
@@ -252,9 +252,9 @@ export function BackgroundEffects() {
             this.y + Math.sin(branch.angle) * branch.length
           )
 
-          gradient.addColorStop(0, `rgba(138, 43, 226, ${this.flareIntensity})`) // Changed color to purple
-          gradient.addColorStop(0.3, `rgba(138, 43, 226, ${this.flareIntensity * 0.7})`) // Changed color to purple
-          gradient.addColorStop(1, 'rgba(138, 43, 226, 0)') // Changed color to purple
+          gradient.addColorStop(0, `rgba(138, 43, 226, ${this.flareIntensity})`) 
+          gradient.addColorStop(0.3, `rgba(138, 43, 226, ${this.flareIntensity * 0.7})`) 
+          gradient.addColorStop(1, 'rgba(138, 43, 226, 0)') 
 
           this.ctx.beginPath()
           this.ctx.strokeStyle = gradient
@@ -273,7 +273,7 @@ export function BackgroundEffects() {
           this.ctx.stroke()
 
           this.ctx.lineWidth = branch.width * this.flareIntensity * 2
-          this.ctx.strokeStyle = `rgba(138, 43, 226, ${this.flareIntensity * 0.3})` // Changed color to purple
+          this.ctx.strokeStyle = `rgba(138, 43, 226, ${this.flareIntensity * 0.3})` 
           this.ctx.stroke()
         })
       }
@@ -295,8 +295,8 @@ export function BackgroundEffects() {
           this.y,
           this.radius * 1.5
         )
-        coreGradient.addColorStop(0, 'rgba(138, 43, 226, 0.8)') // Changed color to purple
-        coreGradient.addColorStop(0.4, 'rgba(138, 43, 226, 0.5)') // Changed color to purple
+        coreGradient.addColorStop(0, 'rgba(138, 43, 226, 0.8)') 
+        coreGradient.addColorStop(0.4, 'rgba(138, 43, 226, 0.5)') 
         coreGradient.addColorStop(1, 'rgba(0, 0, 0, 0)')
 
         this.ctx.beginPath()
@@ -314,14 +314,14 @@ export function BackgroundEffects() {
           0,
           Math.PI * 2
         )
-        this.ctx.strokeStyle = 'rgba(138, 43, 226, 0.4)' // Changed color to purple
+        this.ctx.strokeStyle = 'rgba(138, 43, 226, 0.4)' 
         this.ctx.lineWidth = 4
         this.ctx.stroke()
 
         const glowColors = [
-          'rgba(138, 43, 226, 0.2)', // Changed color to purple
-          'rgba(138, 43, 226, 0.15)', // Changed color to purple
-          'rgba(138, 43, 226, 0.1)' // Changed color to purple
+          'rgba(138, 43, 226, 0.2)', 
+          'rgba(138, 43, 226, 0.15)', 
+          'rgba(138, 43, 226, 0.1)' 
         ]
 
         glowColors.forEach((color, index) => {

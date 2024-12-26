@@ -8,9 +8,7 @@ export const compareSentences = (original: string, spoken: string) => {
       correctWords++
     }
   })
-
   const score = Math.round((correctWords / wordsOriginal.length) * 100)
-
   let feedback = ''
   if (score === 100) {
     feedback = 'ยอดเยี่ยม! คุณออกเสียงได้ถูกต้องทั้งหมด'

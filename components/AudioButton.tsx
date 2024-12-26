@@ -11,11 +11,11 @@ const AudioButton: React.FC<AudioButtonProps> = ({ word, disabled = false }) => 
 
   useEffect(() => {
     setAudio(new Audio(`https://api.dictionaryapi.dev/media/pronunciations/en/${word}-us.mp3`))
-    setError(null) // Reset error when word changes
+    setError(null)
   }, [word])
 
   const playAudio = () => {
-    setError(null) // Reset error before attempting to play
+    setError(null) 
     if (audio) {
       audio.play().catch(error => {
         console.error('Error playing audio:', error);
