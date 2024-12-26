@@ -44,7 +44,7 @@ const PronunciationPractice = () => {
         const transcript = event.results[0][0].transcript.toLowerCase().trim()
         const confidence = event.results[0][0].confidence
         
-
+// เซ็ต % การอ่านถูก *รวนอยู่เดะค่อยแก้
         const score = calculateScore(transcript, currentPhonics.thaiPhonetic)
         let feedback = ''
 

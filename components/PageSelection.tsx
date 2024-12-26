@@ -12,7 +12,7 @@ const PageSelection: React.FC<PageSelectionProps> = ({ onSelectPage }) => {
         className="px-4 py-2 rounded-md purple-glow-button transition-colors"
         onClick={() => onSelectPage('pronunciation')}
       >
-        ฝึกออกเสียงภาษาอังกฤษ
+        ฝึกออกเสียงโฟนิกส์
       </button>
       <button
         className="px-4 py-2 rounded-md purple-glow-button transition-colors"
